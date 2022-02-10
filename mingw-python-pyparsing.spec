@@ -5,7 +5,7 @@
 Name:           mingw-python-%{pypi_name}
 Summary:        MinGW Python %{pypi_name}
 Version:        2.4.7
-Release:        2%{?dist}
+Release:        3%{?dist}
 BuildArch:      noarch
 
 License:        MIT
@@ -68,6 +68,9 @@ MinGW Python 3 %{pypi_name}.
 
 
 %changelog
+* Thu Feb 10 2022 Sandro Mani <manisandro@gmail.com> - 2.4.7-3
+- Rebuild for new python dependency generator
+
 * Thu Jan 20 2022 Fedora Release Engineering <releng@fedoraproject.org> - 2.4.7-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
