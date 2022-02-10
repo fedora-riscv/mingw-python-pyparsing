@@ -5,7 +5,7 @@
 Name:           mingw-python-%{pypi_name}
 Summary:        MinGW Python %{pypi_name}
 Version:        2.4.7
-Release:        3%{?dist}
+Release:        4%{?dist}
 BuildArch:      noarch
 
 License:        MIT
@@ -68,6 +68,9 @@ MinGW Python 3 %{pypi_name}.
 
 
 %changelog
+* Thu Feb 10 2022 Sandro Mani <manisandro@gmail.com> - 2.4.7-4
+- Rebuild for new python dependency generator (take two)
+
 * Thu Feb 10 2022 Sandro Mani <manisandro@gmail.com> - 2.4.7-3
 - Rebuild for new python dependency generator
 
