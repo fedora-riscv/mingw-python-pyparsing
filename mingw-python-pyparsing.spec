@@ -1,7 +1,7 @@
 # This package is required by python-build to build wheels.
 # To bootstrap, we copy the files to appropriate locations manually and create a minimal dist-info metadata.
 # Note that as a pure Python package, the wheel contains no pre-built binary stuff.
-%bcond_with     bootstrap
+%bcond_without     bootstrap
 
 %{?mingw_package_header}
 
@@ -105,6 +105,9 @@ cp -a pyparsing %{distinfo} %{buildroot}%{mingw64_python3_hostsitearch}/
 
 
 %changelog
+* Mon Apr 24 2023 Liu Yang <Yang.Liu.sn@gmail.com> - 3.0.9-3~bootstrap
+- Bootstrap for Fedora 38 riscv64.
+
 * Thu Jan 19 2023 Fedora Release Engineering <releng@fedoraproject.org> - 3.0.9-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_38_Mass_Rebuild
 
